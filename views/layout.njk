@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+    
+    <link rel="icon" href="favicon1.ico" type="image/x-icon" /> 
+    <!--colocando icone -->   
+    
+
+
+    <head>
+        <title>GYM Maneger</title>
+        {% block head %}
+        {% endblock %} 
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body> 
+        <header>
+            <div  class="links">
+                <a href="/instructors" class="active">Instrictors</a>
+                <a href="/membres">Members</a>              
+            </div>
+        </header>   
+        {% block content %}{% endblock %}
+    </body>
+</html>
