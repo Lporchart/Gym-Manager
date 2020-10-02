@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
     border: none;
+   
 }
 
 body{
@@ -68,7 +69,8 @@ header{
 .card{
     background-color: white;
     width: 800px;
-    height: 400px;
+    /*pode ser que tenha que trocar para o min-height: ;*/
+    min-height: 400px;
     margin: 45px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -78,6 +80,7 @@ header{
     animation-name: up;
     animation-duration: 1000ms; 
     animation-timing-function: ease-in-out;
+    text-align: center;
 }
 
 @keyframes up {
@@ -86,6 +89,91 @@ header{
         transform: translate(15px);
     }
     to{
-        opacity: 1;
+        opacity: 0;
     }
+}
+
+/*details*/
+
+.details{
+    padding: 32px;
+}
+
+.details .item{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 16px 0;
+}
+
+.details .item:last-child{
+    border: none;
+}
+
+.details h3,
+.details .item div:nth-child(1){
+    font-size: 14px;
+    line-height: 24px;
+    color: #777;
+    letter-spacing: 0.7px;
+    font-weight: normal;         
+}
+
+.details .item div:nth-child(2){
+    color: #555;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.details h3{
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: plum;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+.details .item span{
+    /*       ↑/↓  ←/→       */
+    padding: 8px 16px;
+    background-color: plum;
+    border-radius: 30px;
+    color: white;
+    margin-right: 4px;
+    margin-top: 8px;
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    
+}
+
+/* Form */
+input{
+    width: 100%;
+    outline: none;
+    color: #555;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+input[type="radio"]{
+    width: initial;
+    margin-right: 4px;
+}
+
+input::placeholder{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+button[type="submit"]{
+    padding: 8px 32px;
+    background-color: plum;
+    border-radius: 30px;
+    margin-top: 16px;
+    color: white;
+    width: 100%;
+    font-size: 12px;
 }

@@ -1,0 +1,31 @@
+{
+  "instructors": [
+    {
+      "id": 1,
+      "avatar_url": "https://www.twitch.tv/djoko",
+      "name": "Leonardo Vinicius",
+      "birth": 1602892800000,
+      "gender": "M",
+      "services": "Maskman",
+      "create_at": 1601618898976
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://www.twitch.tv/djoko",
+      "name": "Leo Vinicius",
+      "birth": 1603756800000,
+      "gender": "M",
+      "services": "Crosfit, natação, corrida",
+      "create_at": 1601620370181
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://www.twitch.tv/djoko",
+      "name": "Leonardo Vinicius",
+      "birth": 1602720000000,
+      "gender": "F",
+      "services": "chupar bct",
+      "create_at": 1601621754197
+    }
+  ]
+}
